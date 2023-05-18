@@ -1,6 +1,8 @@
 
 import React from "react";
 import diegoPP from "../../img/diego_pp.jpg"
+import jose from "../../img/jose.jpg"
+
 
 
 export const About= () => {
@@ -33,10 +35,10 @@ export const About= () => {
             </div>     
             <div className="col col-12 col-lg-3">
             <div className="card " >
-                <img src="https://placehold.co/600x400" className="card-img-top" alt="..."/>
+                <img src={jose} className="card-img-top" alt="..."/>
                 <div class="card-body">
-                    <h5 class="card-title">Nombre</h5>
-                    <p class="card-text">Datos personales</p>
+                    <h5 class="card-title">Jose Hernandez</h5>
+                    <p class="card-text">28 años, estudiante de ingenieria en informatica. Interesado en el area tecnologica.</p>
                 </div>
 
               </div>
