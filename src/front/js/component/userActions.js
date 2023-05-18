@@ -10,7 +10,6 @@ export const UserActions = () => {
 	const { actions, store } = useContext(Context)
 	const navigate = useNavigate()
 	useEffect(() => {
-		console.log ("por favor")
 		actions.getUserProducts()
 	},[])
 	return (

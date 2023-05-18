@@ -37,6 +37,7 @@ export const ProductDetails = () => {
   console.log(store.products);
   return (
     <div className="container text-center py-5 ">
+      <h1 className="d-flex align-self-left mb-5"> "Detalles de producto" </h1>
       <div className="row ">
         <div className="col">
           <img
@@ -60,11 +61,11 @@ export const ProductDetails = () => {
               <i className="fas fa-star iconstar"></i>
             </div>
 
-            <div className="p-2">
-              <h2 className="float-start">{productDetail.price}</h2>
+            <div className="p-2 my-4">
+              <h2 className="float-start"> Precio:{productDetail.price}</h2>
             </div>
             <div className="p-2">
-              <h6 className="float-start">{productDetail.user_id}</h6>
+              {/* <h6 className="float-start">Seller:{productDetail.user_id}</h6> */}
             </div>
             <div className="p-2">
               {/* <h6 className="float-start">Tipo de producto: Juegos</h6> */}
@@ -104,7 +105,7 @@ export const ProductDetails = () => {
                         <h6 className="text-start">
                           Delivery Gratis.
                           <p className="fs-6 text-secondary">
-                            Lorem Ipsum dummy
+                            Con ordenes mayores a 50$
                           </p>
                         </h6>
                       </div>
@@ -116,7 +117,7 @@ export const ProductDetails = () => {
                         <h6 className="text-start">
                           Atención al cliente.
                           <p className="fs-6 text-secondary">
-                            Lorem Ipsum dummy
+                            Sopporte online 24/7
                           </p>
                         </h6>
                       </div>
@@ -127,7 +128,7 @@ export const ProductDetails = () => {
                         <h6 className="text-start">
                           Grandes ahorros.
                           <p className="fs-6 text-secondary">
-                            Lorem Ipsum dummy
+                            No cobramos comision de venta!
                           </p>
                         </h6>
                       </div>
@@ -139,7 +140,7 @@ export const ProductDetails = () => {
                           {" "}
                           Gift Voucher.
                           <p className="fs-6 text-secondary">
-                            Lorem Ipsum dummy
+                            Sigue nuestras redes para cupones y mas!
                           </p>
                         </h6>
                       </div>
@@ -162,18 +163,7 @@ export const ProductDetails = () => {
             role="tablist"
           >
             <li className="nav-item" role="presentation">
-              <button
-                className="nav-link active"
-                id="home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#home-tab-pane"
-                type="button"
-                role="tab"
-                aria-controls="home-tab-pane"
-                aria-selected="true"
-              >
-                Descripcion
-              </button>
+              
             </li>
             <li className="nav-item" role="presentation">
               <button
@@ -205,15 +195,7 @@ export const ProductDetails = () => {
             </li>
           </ul>
           <div className="tab-content" id="myTabContent">
-            <div
-              className="tab-pane fade show active"
-              id="home-tab-pane"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-              tabIndex="0"
-            >
-              ...
-            </div>
+           
             <div
               className="tab-pane fade"
               id="profile-tab-pane"
@@ -221,7 +203,19 @@ export const ProductDetails = () => {
               aria-labelledby="profile-tab"
               tabIndex="0"
             >
-              ...
+              <h2>Política de devoluciones:</h2>
+              <ul>
+<li>Plazo mínimo de 14 días para devolución.</li>
+<li>El cliente no está obligado a justificar el motivo de la devolución.</li>
+<li>La empresa debe devolver todo el importe pagado por el consumidor, incluyendo los gastos de envío iniciales.</li>
+<li>El comprador tiene que hacerse cargo de los gastos derivados de la devolución del producto.</li>
+</ul>
+<h2>Política de privacidad:</h2>
+<ul>
+<li>Nunca compartiremos tu informacion con nadie</li>
+<li>Un miembro de nuestro staff jamas te pedira tu contraseña</li>
+<li>No nos hacemos responsables por cuentas perdidas o hackeadas, siempre utiliza una conexion segura y cierra tus sesiones al terminar</li>
+</ul>
             </div>
             <div
               className="tab-pane fade"
@@ -230,7 +224,11 @@ export const ProductDetails = () => {
               aria-labelledby="warranty-tab"
               tabIndex="0"
             >
-              ...
+              <h2>La politica de garantia solo aplica si:</h2>
+              <ul>
+                <li>Han pasado menos de 28 dias habiles luego de la compra</li>
+                <li>El producto presenta defectos no especificados por el vendedor</li>
+              </ul>
             </div>
           </div>
         </div>
