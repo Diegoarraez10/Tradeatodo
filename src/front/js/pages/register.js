@@ -91,11 +91,6 @@ export const Register = () => {
                                                     <input name="password" value={userInfo.password} onChange={(event) => { handleChange(event) }} type="password" className="form-control" id="validationCustom01" required />
                                                 </div>
 
-                                                <div className="mb-3 form-check">
-                                                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                                    <label className="form-check-label" htmlFor
-                                                        ="exampleCheck1">Mantener mi sesion iniciada</label>
-                                                </div>
                                                 <button onClick={(event) => { ingresar(event) }} type="submit" className="btn btn-primary">Ingresar</button>
                                             </form>
                                         </div>
@@ -151,10 +146,7 @@ export const Register = () => {
                                                     <label htmlFor="exampleInputEmail1 validationCustom01" className="form-label">Correo Paypal</label>
                                                     <input name="pay" value={userInfo.pay} onChange={(event) => { handleChange(event) }} type="email" className="form-control" id="exampleInputEmail1 validationCustom01" aria-describedby="emailHelp" required />
                                                 </div>
-                                                <div className="mb-3 form-check">
-                                                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                                    <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-                                                </div>
+
                                                 <button onClick={(event) => { registro(event) }} type="submit" className="btn btn-primary"  >Submit</button>
                                                 
                                             </form>
